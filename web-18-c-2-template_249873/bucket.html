@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/bucket.css">
+    <title>Document</title>
+  </head>
+
+  <style>
+    #bucket{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 10px;
+}
+
+#bucket>div{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 10px;
+}
+
+#bucket>div>img{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+}
+#bucket>div>p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#bucket>div>button{
+    padding: 10px 20px 10px 20px;
+}
+
+button{
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+  </style>
+
+  <body>
+    <div id="total-div">
+      <h3 id="total_amount">
+        <!--Show bucket total here, do not add anything only Total value. Not even "Total - 1200Rs" but like this "1200" -->
+      </h3>
+    </div>
+    <div id="bucket">
+      <!--Show all coffee added to bucket here-->
+      <!-- add an remove button to each coffee so that you can remove that item from bucket, give the button HTML id as 'remove_coffee' -->
+    </div>
+
+    <!-- checkout link  -->
+    <button onclick=" checkout()" id="confirm_checkout">Checkout</button>
+  </body>
+</html>
+
+<script src="./scripts/bucket.js"></script>
